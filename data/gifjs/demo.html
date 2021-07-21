@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>gif</title>
+</head>
+<body>
+
+<script src="./gif.js"></script>
+<script>
+  var imgUrls = [
+    'https://i.loli.net/2021/07/21/4BKNoCDXGP5hSma.gif',
+    'http://img.mp.itc.cn/upload/20160402/280fbc7c1acc452c82ee3400a50afd10.jpg'
+  ];
+
+  for(var i = 0; i<imgUrls.length; i++){
+    var div = document.createElement('div');
+    var el = document.body.appendChild(div);
+    new Gif({
+      el: el,
+      url: imgUrls[i]
+    });
+  }
+</script>
+</body>
+</html>
