@@ -28,7 +28,7 @@
       ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
 
       var stop = new Image();
-      stop.src = './stop.png';
+      stop.src = 'https://cdn.jsdelivr.net/gh/celestezj/Mirror1ImageHosting/data/gifjs/stop.png';
       stop.onload = function () {
         ctx.drawImage(stop, canvas.width/2-15, canvas.height/2-15, 30, 30);
       }
