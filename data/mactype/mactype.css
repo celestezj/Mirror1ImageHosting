@@ -1,0 +1,69 @@
+<style class="sBHKXMNGLJ" id="TS46143331" type="text/css">
+@charset "UTF-8";* {
+	font: 14px/130% 'Operator Mono Lig','Fira Code','Roboto Mono','Monaco','Courier New',monospace!important;
+}
+/*油猴脚本——字体渲染：https://greasyfork.org/zh-CN/scripts/416688-%E5%AD%97%E4%BD%93%E6%B8%B2%E6%9F%93-%E8%87%AA%E7%94%A8%E8%84%9A%E6%9C%AC*/
+* {
+	text-shadow: 0 0 2px #7B7B7B;
+	text-stroke: 0.015px currentcolor;
+	-webkit-text-stroke: 0.015px currentcolor;
+	paint-order: stroke fill;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-rendering: optimizeLegibility;
+	/*font-family: 'Microsoft YaHei','Helvetica Neue',Arial,sans-serif,'iconfont','icomoon','FontAwesome','Material Icons Extended';*/
+}
+/*
+@font-face {
+	font-family:"宋体";src:local("Microsoft YaHei")
+}
+@font-face {
+	font-family:"黑体";src:local("Microsoft YaHei")
+}
+@font-face {
+	font-family:SimHei;src:local("Microsoft YaHei")
+}
+@font-face {
+	font-family:SimSun;src:local("Microsoft YaHei")
+}
+@font-face {
+	font-family:"serif";src:local("Microsoft YaHei")
+}
+@font-face {
+	font-family:"Microsoft YaHei UI";src:local("Microsoft YaHei")
+}
+@font-face {
+	font-family:"Segoe UI";src:local("Microsoft YaHei")
+}
+@font-face {
+	font-family:"sans-serif";src:local("Microsoft YaHei")
+}
+@font-face {
+	font-family:Tahoma;src:local("Microsoft YaHei")
+}
+@font-face {
+	font-family:Arial;src:local("Microsoft YaHei")
+}
+@font-face {
+	font-family:Helvetica;src:local("Microsoft YaHei")
+}
+*/
+/*不使用增强渲染（白名单）*/
+span.katex, span.katex *, code, .img-alt.is-center, .bangumi-info-items *, i.far, i.fab, i.fas {
+	text-stroke: initial!important;
+	-webkit-text-stroke: initial!important;
+	text-shadow: initial!important;
+}
+/*
+i.far, i.fab, i.fas {
+    text-shadow: none !important;
+}
+*/
+/*修复文章标题和导航栏（白色）文字未渲染问题：给这些白色文字另外加阴影，此外当其处于nav-fixed或not-top-img状态时（又变成非白色字体），则取消阴影*/
+#post-info *, #site-title, #site-subtitle *, #nav #blog_name *, #nav .menus_items .site-page:not(.child) *, #nav #search-button *, #nav #toggle-menu * {
+    text-shadow:#000 1px 1px 2px !important;
+}
+#page-header.nav-fixed #nav #site-name, #page-header.nav-fixed #nav .menus_items *, #page-header.nav-fixed #nav #search-button *, #page-header.nav-fixed #nav #toggle-menu *, #post>#post-info:first-child *, #page-header.not-top-img #nav #site-name, #page-header.not-top-img #nav .menus_items *, #page-header.not-top-img #nav #search-button *, #page-header.not-top-img #nav #toggle-menu *  {
+    text-shadow: 0 0 2px #7B7B7B !important;
+}
+</style>
