@@ -49,7 +49,7 @@
 }
 */
 /*不使用增强渲染（白名单）*/
-span.katex, span.katex *, code, .img-alt.is-center, .bangumi-info-items *, i.far, i.fab, i.fas {
+span.katex, span.katex *, code, .img-alt.is-center, .bangumi-info-items *, i.far, i.fab, i.fas, .read-mode * {
 	text-stroke: initial!important;
 	-webkit-text-stroke: initial!important;
 	text-shadow: initial!important;
@@ -59,11 +59,14 @@ i.far, i.fab, i.fas {
     text-shadow: none !important;
 }
 */
-/*修复文章标题和导航栏（白色）文字未渲染问题：给这些白色文字另外加阴影，此外当其处于nav-fixed或not-top-img状态时（又变成非白色字体），则取消阴影*/
+/*修复文章标题和导航栏（白色）文字未渲染问题：给这些白色文字另外加阴影，但当其处于nav-fixed或not-top-img状态（又变成非白色字体）或阅读模式时，则取消阴影*/
 #post-info *, #site-title, #site-subtitle *, #nav #blog_name *, #nav .menus_items .site-page:not(.child) *, #nav #search-button *, #nav #toggle-menu * {
     text-shadow:#000 1px 1px 2px !important;
 }
 #page-header.nav-fixed #nav #site-name, #page-header.nav-fixed #nav .menus_items *, #page-header.nav-fixed #nav #search-button *, #page-header.nav-fixed #nav #toggle-menu *, #post>#post-info:first-child *, #page-header.not-top-img #nav #site-name, #page-header.not-top-img #nav .menus_items *, #page-header.not-top-img #nav #search-button *, #page-header.not-top-img #nav #toggle-menu *  {
     text-shadow: 0 0 2px #7B7B7B !important;
+}
+.read-mode #post-info *, .read-mode #site-title, .read-mode #site-subtitle *, .read-mode #nav #blog_name *, .read-mode #nav .menus_items .site-page:not(.child) *, .read-mode #nav #search-button *, .read-mode #nav #toggle-menu * {
+    text-shadow:none !important;
 }
 </style>
