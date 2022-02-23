@@ -9,7 +9,7 @@
   color: rgba(60,60,61,0.7);
   border-radius: 5px;
   font-weight: bolder;
-  box-shadow: 2px 2px 10px #888;
+  box-shadow: 0px 0px 2px #888;
   font-family: 'SAOUI' !important;
   width: 90%;
   max-width: 810px;
@@ -24,7 +24,7 @@
 }
 #fMessageBoard .fMessageItem {
   background: rgba(207,207,207,0.8);
-  box-shadow: 0px 0px 15px #bcbcbc inset;
+  //box-shadow: 0px 0px 15px #bcbcbc inset;
 }
 #fMessageBoard .fMessageItem .fItem {
   height: 60px;
@@ -118,7 +118,7 @@
   margin: auto;
   background: rgba(249,249,249,0.8);
   color: rgba(60,60,61,0.7);
-  box-shadow: 2px 2px 10px #888;
+  box-shadow: 0px 0px 2px #888;
   border-radius: 5px;
   font-weight: bolder;
   text-align: center;
@@ -144,7 +144,7 @@
   color: rgba(60,60,61,0.7);
   border-radius: 5px;
   font-weight: bolder;
-  box-shadow: 2px 2px 10px #888;
+  box-shadow: 0px 0px 2px #888;
   overflow: hidden;
 }
 #fcircleContainer .fArticleItem .fArticleAvatar {
